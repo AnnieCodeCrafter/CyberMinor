@@ -1,4 +1,4 @@
-@import "jekyll-theme-slate";
+@import "{{ site.theme }}";
 body { 
-  background-color:lightgreen;
+  background-color:yellow;
 }
