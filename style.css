@@ -4,6 +4,7 @@
     color: Gainsboro;
 }
 #header_wrap {
-    background:#65b886;
+    background: none;
+    background-color:#65b886;
     color: Gainsboro;
 }
