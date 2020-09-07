@@ -1,14 +1,22 @@
 
+
+/* general stuff */
+h1, h2, h3, h4, h5, h6 {
+    color: Gainsboro;
+}
+
+/*header */
+
+#header_wrap {
+    background: none;
+    background-color:#5faba8;
+    color: Gainsboro;
+}
+
+
+/* body */
 #main_content_wrap {
     background-color:#2c2f33;
     color: Gainsboro;
 }
-#header_wrap {
-    background: none;
-    background-color:Verdigris;
-    color: Gainsboro;
-}
 
-h1, h2, h3, h4, h5, h6 {
-    color: Gainsboro;
-}
