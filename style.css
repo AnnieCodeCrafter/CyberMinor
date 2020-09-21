@@ -5,6 +5,14 @@ h1, h2, h3, h4, h5, h6 {
     color: Gainsboro;
 }
 
+button {
+    color: red;
+    background-color: blue;
+    font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+    height: 20px
+    
+    
+
 /*header */
 
 #header_wrap {
@@ -19,4 +27,5 @@ h1, h2, h3, h4, h5, h6 {
     background-color:#2c2f33;
     color: Gainsboro;
 }
+ 
 
