@@ -14,8 +14,24 @@ button {
     font-size: 16px;
 
 }
+
+button:hover {
+    background-color: gray;
+}
     
-    
+
+/*links*/
+
+a {
+    color: #5faba8;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  color: gray;
+}
+
+
 
 /*header */
 
