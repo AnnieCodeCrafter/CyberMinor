@@ -6,5 +6,5 @@ I've been looking around on the internet, searching for lockpicking videos and t
 Another series is about a lawyer who, with his lockpicking skills, tests out which locks are secure and easy to crack and which aren't, from padlocks and bike locks to doorlocks and safes.
 
 I've been able to do a bit of lockpicking myself. Someone from my group brought their practice lockpick set, including see-through practice padlocks. 
-<img href="lockpick1.jpeg"/>
-<img href="lockpick2.jpeg"/>
+<img src="lockpick1.jpeg"/>
+<img src="lockpick2.jpeg"/>
