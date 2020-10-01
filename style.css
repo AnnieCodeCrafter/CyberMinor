@@ -35,6 +35,10 @@ a:hover, a:focus {
   
 }
 
+img {
+      max-width: 100%;
+        height: auto;
+}
 
 
 /*header */
