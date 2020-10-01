@@ -1,4 +1,4 @@
-<h2>MTo Do list</h2>
+<h2>To Do list</h2>
 Here you can see my Must Haves and Should Haves. I would like to do these subjects in this semester. I'll write about them in my portfolio. These might be updated as the semester goes along.
 <br>
 <h3>Could Have</h3>
