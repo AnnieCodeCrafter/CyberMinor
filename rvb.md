@@ -1,5 +1,5 @@
 ## Red Team versus Blue Team event 
-[i]Monday November 26th[/i]
+_Monday November 26th_
 
 ### Table of Contents
 * [Preparation](#preparation)
