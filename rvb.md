@@ -3,6 +3,7 @@
 
 ### Table of Contents
 * [Preparation](#preparation)
+* [Web Applications](#web-applications)
 * [Blogging Web Application](#blogging-web-application)
 * [Dating Web Application](#dating-web-application)
 * [Webshop](#webshop)
@@ -14,7 +15,8 @@ On the 26th of November, we had our first Red Team vs Blue Team event. In this e
 ### Preparation
 Of course, you can’t just start doing a pentest. First of all, I set up a Kali virtual machine in the VMware environment that school provided. I could clone from a template, so that wasn’t hard to do. I connected it to the internet and made sure it was up-to-date.
 The entirety of the red team is pretty big, so we had divided ourself into smaller groups. I was with four others, who were also in my proftaak group. Someone else had listed the blue team’s applications and assigned them to each group. Our group had four web applications in total. 
-Web Applications
+
+### Web Applications
 We were given an excel sheet with all the information we could have. We had the name of the application, the group who made it, the ip-address and which VLAN it was on. There were two different VLAN’s and neither were connected to the internet, only to eachother. I had to switch my vm’s VLAN to be able to connect to either. 
 The four web applications that we were assigned were as follows: 
 •	Blogging Web Application, no IP address provided, on VLAN 1
@@ -24,6 +26,7 @@ The four web applications that we were assigned were as follows:
 
 ### Blogging Web Application
 I was originally appointed to this one. It was the only one who didn’t have a given IP address – either because it wasn’t ready or because the owner forgot, I still don’t know. I tried to find its IP address through Nmap, and the only IP address that was up and wasn’t listed in the excel was 10.10.1.118, so I came to the conclusion that it was the missing IP address. However, Nmap showed that it was completely closed off. There were no ports open. I pinged it and got a response, but going there via the web browser didn’t do anything. So, we left it as it was. 
+<img src="img/rvimg/Picture1.png">
  
 ### Dating Web Application
 This one I did look into seriously. Me and two others worked on this one. I started out doing an Nmap scan: 
