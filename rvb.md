@@ -21,10 +21,10 @@ The entirety of the red team is pretty big, so we had divided ourself into small
 ### Web Applications
 We were given an excel sheet with all the information we could have. We had the name of the application, the group who made it, the ip-address and which VLAN it was on. There were two different VLAN’s and neither were connected to the internet, only to eachother. I had to switch my vm’s VLAN to be able to connect to either. 
 The four web applications that we were assigned were as follows: 
-•	Blogging Web Application, no IP address provided, on VLAN 1
-•	Dating Application, 10.10.2.147, on VLAN2
-•	Webshop, 10.10.1.116, on VLAN 1
-•	Reading Website, 10.10.2.131 and 132, on VLAN2
+*	Blogging Web Application, no IP address provided, on VLAN 1
+*	Dating Application, 10.10.2.147, on VLAN2
+*	Webshop, 10.10.1.116, on VLAN 1
+*	Reading Website, 10.10.2.131 and 132, on VLAN2
 
 ### Blogging Web Application
 I was originally appointed to this one. It was the only one who didn’t have a given IP address – either because it wasn’t ready or because the owner forgot, I still don’t know. I tried to find its IP address through Nmap, and the only IP address that was up and wasn’t listed in the excel was 10.10.1.118, so I came to the conclusion that it was the missing IP address. However, Nmap showed that it was completely closed off. There were no ports open. I pinged it and got a response, but going there via the web browser didn’t do anything. So, we left it as it was. 
