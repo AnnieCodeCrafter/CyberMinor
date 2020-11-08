@@ -1,7 +1,7 @@
 ## Red Team versus Blue Team event 
 _Monday, November 26th, 2020_
 
-_Pictures will be added asap._
+
 
 ### Table of Contents
 * [Preparation](#preparation)
@@ -28,7 +28,7 @@ The four web applications that we were assigned were as follows:
 
 ### Blogging Web Application
 I was originally appointed to this one. It was the only one who didn’t have a given IP address – either because it wasn’t ready or because the owner forgot, I still don’t know. I tried to find its IP address through Nmap, and the only IP address that was up and wasn’t listed in the excel was 10.10.1.118, so I came to the conclusion that it was the missing IP address. However, Nmap showed that it was completely closed off. There were no ports open. I pinged it and got a response, but going there via the web browser didn’t do anything. So, we left it as it was. 
-<img src="img/rvimg/Picture1.png">
+<img src="img/rvbimg/Picture1.png">
  
 ### Dating Web Application
 This one I did look into seriously. Me and two others worked on this one. I started out doing an Nmap scan: 
