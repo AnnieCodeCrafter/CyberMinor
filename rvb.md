@@ -15,11 +15,11 @@ _Monday, November 26th, 2020_
 On the 26th of November, we had our first Red Team vs Blue Team event. In this event, the blue team is tasked to create a web app and secure it as best as possible, as well as monitor it; and the red teamers pentest the web apps to see if the blue team missed anything. I, myself, am part of the red team. 
 
 ### Preparation
-Of course, you can’t just start doing a pentest. First of all, I set up a Kali virtual machine in the VMware environment that school provided. I could clone from a template, so that wasn’t hard to do. I connected it to the internet and made sure it was up-to-date.
-The entirety of the red team is pretty big, so we had divided ourself into smaller groups. I was with four others, who were also in my proftaak group. Someone else had listed the blue team’s applications and assigned them to each group. Our group had four web applications in total. 
+Of course, you can’t just start doing a pentest. First of all, I set up a Kali virtual machine in the VMware environment that school provided. I could clone from a template, so that wasn’t hard to do. I connected it to the internet and made sure it was up-to-date. The entirety of the red team is pretty big, so we had divided ourself into smaller groups. I was with four others, who were also in my proftaak group. Someone else had listed the blue team’s applications and assigned them to each group. Our group had four web applications in total. 
 
 ### Web Applications
-We were given an excel sheet with all the information we could have. We had the name of the application, the group who made it, the ip-address and which VLAN it was on. There were two different VLAN’s and neither were connected to the internet, only to eachother. I had to switch my vm’s VLAN to be able to connect to either. 
+We were given an excel sheet with all the information we could have. We had the name of the application, the group who made it, the ip-address and which VLAN it was on. There were two different VLAN’s and neither were connected to the internet, only to eachother. I had to switch my vm’s VLAN to be able to connect to either.
+ <br>
 The four web applications that we were assigned were as follows: 
 *	Blogging Web Application, no IP address provided, on VLAN 1
 *	Dating Application, 10.10.2.147, on VLAN2
@@ -32,9 +32,9 @@ I was originally appointed to this one. It was the only one who didn’t have a 
  
 ### Dating Web Application
 This one I did look into seriously. Me and two others worked on this one. I started out doing an Nmap scan: 
- 
-This showed that ports 80 and 443 were open, which are normal web ports. Going to the website, I made a simple profile to see what was on the website. 
-One thing I noticed is that you could register again when you’re already logged in. This doesn’t really do anything bad, however, it simply logs you out and then logs you in with the newly registered user.  
+<img src="img/rvbimg/Picture2.png"> 
+This showed that ports 80 and 443 were open, which are normal web ports. Going to the website, I made a simple profile to see what was on the website. One thing I noticed is that you could register again when you’re already logged in. This doesn’t really do anything bad, however, it simply logs you out and then logs you in with the newly registered user.  
+
 You can see a list of people available when you enter the website:
 You can click on their profiles, see their descriptions, and chat with them. When I edited my own description, I tried to enter cross-site scripting or sql injection, and neither worked. When uploading a profile picture, it sends the image to a different vendor that ‘flattens’ the image and forces the extension into normal .jpg or .png, so you can’t sneak in any payloads that way. 
 One smaller thing I found was that the server doesn’t check if values are valid. I made a new person with birthday in the future, and the site allowed it:  
