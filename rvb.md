@@ -33,24 +33,41 @@ I was originally appointed to this one. It was the only one who didn’t have a 
 ### Dating Web Application
 This one I did look into seriously. Me and two others worked on this one. I started out doing an Nmap scan: 
 <img src="img/rvbimg/Picture2.png"> 
-This showed that ports 80 and 443 were open, which are normal web ports. Going to the website, I made a simple profile to see what was on the website. One thing I noticed is that you could register again when you’re already logged in. This doesn’t really do anything bad, however, it simply logs you out and then logs you in with the newly registered user.  
-
+<br>
+This showed that ports 80 and 443 were open, which are normal web ports. Going to the website, I made a simple profile to see what was on the website. 
+<br>
+One thing I noticed is that you could register again when you’re already logged in. This doesn’t really do anything bad, however, it simply logs you out and then logs you in with the newly registered user.  
+<img src="img/rvbimg/Picture3.png">
+<br>
 You can see a list of people available when you enter the website:
+<img src="img/rvbimg/Picture4.png">
+<br>
 You can click on their profiles, see their descriptions, and chat with them. When I edited my own description, I tried to enter cross-site scripting or sql injection, and neither worked. When uploading a profile picture, it sends the image to a different vendor that ‘flattens’ the image and forces the extension into normal .jpg or .png, so you can’t sneak in any payloads that way. 
+<br>
 One smaller thing I found was that the server doesn’t check if values are valid. I made a new person with birthday in the future, and the site allowed it:  
+<img src="img/rvbimg/Picture5.png">
+<br>
 One other thing I noticed is that the user ID is in the link, so you can navigate to a user’s profile that doesn’t exist. 
+<img src="img/rvbimg/Picture7.png">
 
 ### Webshop
 With this one, I wasn’t involved at first but I have taken a look at it to confirm the other group’s findings.  
+<img src="img/rvbimg/Picture8.png">
+<br>
 Ports 22, 80, and 443 were open, which are all normal web ports. An SSH port was also open.  We had already been given the username/password for the site, but if you wanted to create another user, it’s automatically an admin, someone who can add and remove products. 
+<br>
 Further, you can enter negative entries, so this “fruit” is worth minus one cent. 
- 
+<img src="img/rvbimg/Picture9.png">
+<br>
+<img src="img/rvbimg/Picture10.png">
  
 ### Reading website
 I wasn’t involved in this one either, but I also took a look at it to confirm the other’s findings. 
- 
+<img src="img/rvbimg/Picture11.png">
+ <br>
 The reading website has two ip’s; one for the frontend, and one for the backend. Note that the MySql port is open – it’s visible that there is a database there, but you can’t actually access it.
-
+<img src="img/rvbimg/Picture12.png">
+<br>
 For the rest, though, it has too few features to actually make something of it. You can’t click on a fiction, you can’t make a fiction. You can only make your account and that’s mostly it. 
 
 ### Conclusion
