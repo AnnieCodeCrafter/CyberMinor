@@ -1,5 +1,7 @@
 ## Red Team versus Blue Team event 
-[i]Monday November 26th[/i]
+_Monday, November 26th, 2020_
+
+_Pictures will be added asap._
 
 ### Table of Contents
 * [Preparation](#preparation)
