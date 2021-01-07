@@ -8,8 +8,8 @@ At first, the setup was fairly standard; I picked an image from the Kali website
 ## Programs
 I also added a few more programs as I needed them. I added Ghydra to try out reverse-engineering, which I needed during the HTB ctf. I also installed XSSer which I used while pentesting. Lastly, I installed Postman to use alongside curl.
 
-![kali](img/kalimg/kali.png)
+![kali](img/kalimg/kali.PNG)
 
 # HTB
 For Hack the Box, I use a special script to quickly log myself in so I don't have to type the command every time. 
-![ovpn](img/kalimg/ovpn.png)
+![ovpn](img/kalimg/ovpn.PNG)
